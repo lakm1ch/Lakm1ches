@@ -355,18 +355,30 @@ footer{
     transition-duration: 0.5s;
     box-shadow: 8px 8px black;
 }
-/* 
-.mobile-button img{
+
+.mobile-button{
     display: none;
-} */
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 .mobile-menu {
-    display: none;
     position: absolute;
     right: 0px;
     z-index: -1;
     top: 0;
     background-color: #200153;
     min-height: 100vh;
+}
+
+.mobile-nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-nav-links .nav-link{
@@ -381,6 +393,10 @@ footer{
 
 /* для телефонов */
 @media (max-width: 1000px) {
+    
+    .mobile-button{
+        display: block;
+    }
 
     .mobile-button img{
         display: block;
@@ -389,7 +405,7 @@ footer{
         display: block;
         z-index: 5;
     }
-    .nav-link{
+    .nav-links{
         display: none;
     }
 
